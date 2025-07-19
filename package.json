@@ -1,0 +1,38 @@
+{
+  "name": "@ubermanu/biome-config",
+  "version": "0.1.0",
+  "keywords": [
+    "biome",
+    "config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ubermanu/biome-config.git"
+  },
+  "license": "MIT",
+  "author": "Emmanuel Vodor <emmanuel.vodor@proton.me>",
+  "type": "module",
+  "exports": {
+    "./biome.json": "./biome.jsonc"
+  },
+  "main": "biome.jsonc",
+  "files": [
+    "biome.jsonc"
+  ],
+  "scripts": {
+    "check": "biome check --write .",
+    "lint": "biome lint --write .",
+    "format": "biome format --write ."
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.28.1",
+    "@types/node": "^24",
+    "@biomejs/biome": "^2.1.2"
+  },
+  "peerDependencies": {
+    "@biomejs/biome": "^2.1.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
