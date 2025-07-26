@@ -11,9 +11,8 @@
   },
   "license": "MIT",
   "author": "Emmanuel Vodor <emmanuel.vodor@proton.me>",
-  "type": "module",
   "exports": {
-    "./biome.json": "./biome.jsonc"
+    ".": "./biome.jsonc"
   },
   "main": "biome.jsonc",
   "files": [
