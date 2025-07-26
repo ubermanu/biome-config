@@ -1,6 +1,6 @@
 {
   "name": "@ubermanu/biome-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [
     "biome",
     "config"
@@ -21,12 +21,18 @@
   "scripts": {
     "check": "biome check --write .",
     "lint": "biome lint --write .",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{json,jsonc}": "biome check --write"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.1.2",
     "@changesets/cli": "^2.28.1",
     "@types/node": "^24",
-    "@biomejs/biome": "^2.1.2"
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2"
   },
   "peerDependencies": {
     "@biomejs/biome": "^2.1.2"
